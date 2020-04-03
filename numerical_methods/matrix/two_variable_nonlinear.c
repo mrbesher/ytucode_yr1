@@ -57,12 +57,6 @@ void nonlinear_twovar(double a[][100], double x0[][100], double epsilon, char ex
       a[i][1] = (f_1-f_0)/(dx*2); //write d(fx)/dy to a[0][1]
       a[i][2] = -te_eval(expr); //write fx to a[0][2]
     }
-    for (size_t i = 0; i < 2; i++) {
-      for (size_t j = 0; j < 3; j++) {
-        printf("%1.2lf\t",a[i][j]);
-      }
-      printf("\n");
-    }
     gauss(a, 2);
     x0[0][0] += a[0][2];
     x0[0][1] += a[1][2];

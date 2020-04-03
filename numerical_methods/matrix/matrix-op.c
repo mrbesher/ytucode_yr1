@@ -100,6 +100,7 @@ int main(int argc, char const *argv[]) {
       printf("Enter a starting point for x: ");scanf("%lf",&x0[0][0]);
       printf("Enter a starting point for y: ");scanf("%lf",&x0[0][1]);
       nonlinear_twovar(a,x0,epsilon,expression);
+      printf("x=%lf\t y=%lf\n",x0[0][0],x0[0][1]);
       break;
   }
   return 0;
@@ -263,12 +264,6 @@ void nonlinear_twovar(double a[][100], double x0[][100], double epsilon, char ex
       x0[0][1] += dx;
       a[i][1] = (f_1-f_0)/(dx*2); //write d(fx)/dy to a[0][1]
       a[i][2] = -te_eval(expr); //write fx to a[0][2]
-    }
-    for (size_t i = 0; i < 2; i++) {
-      for (size_t j = 0; j < 3; j++) {
-        printf("%1.2lf\t",a[i][j]);
-      }
-      printf("\n");
     }
     gauss(a, 2);
     x0[0][0] += a[0][2];
