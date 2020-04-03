@@ -3,7 +3,7 @@ void gauss(double a[][100],int size);
 int main(int argc, char const *argv[]) {
   int size;
   static double a[100][100];
-  printf("bla bla... Enter the number of equations / variables: ");scanf("%d",&size);
+  printf("Given the equations are represented as a[1]*X1+a[2]*X2+...+a[n]*Xn=C\nEnter the number of equations / variables: ");scanf("%d",&size);
   for (size_t i = 0; i < size; i++) {
     for (size_t j = 0; j < size; j++) {
       printf("In the %ld.row: Enter the coefficient of x%ld: ",i+1,j+1);scanf("%lf",&a[i][j]);
