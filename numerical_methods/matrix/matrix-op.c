@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <math.h>
+#include "tinyexpr.h"
 #define METHODS 5
 void inverse(double a[][100],int size);
 void gauss(double a[][100],int size);
