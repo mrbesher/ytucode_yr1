@@ -126,7 +126,7 @@ double simpson(double a, double b, char expression[][100], int change) {
     a=swap;
   }
   if (change) {
-    printf("Enter the number of trapezoids you wish to be used: ");scanf("%lf",&n);
+    printf("Enter the number of areas you wish to be used: ");scanf("%lf",&n);
     h = (b-a)/n;
   }
   n=(b-a)/h;
