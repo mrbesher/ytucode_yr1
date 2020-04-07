@@ -48,7 +48,7 @@ int main(int argc, char const *argv[]) {
           printf("Given that the defined integral is over the interval (a,b).\n");
           printf("Enter a: ");scanf("%lf",&a);
           printf("Enter b: ");scanf("%lf",&b);
-          printf("n (the number of areas) is set to %1.0lf. Do you wish to change it? (y/n): ",fabs(b-a)*10000);getchar();scanf(" %c",&operator);
+          printf("n (the number of areas) is set to %1.0lf. Do you wish to change it? (y/n): ",fabs(b-a)*2);getchar();scanf(" %c",&operator);
           if (operator=='y')
             printf(GREEN"%lf\n"RESET,simpson(a,b,expression,1));
           else
@@ -117,7 +117,7 @@ double trapez(double a, double b, char expression[][100], int change) {
   return sum;
 }
 double simpson(double a, double b, char expression[][100], int change) {
-  double swap, h=1.0e-4,n,a0,sum=0;
+  double swap, h=0.5,n,a0,sum=0;
   te_variable vars[] = {"x",&a0};
   te_expr *expr = te_compile(expression[0], vars, 1, 0);
   if (a>b) {
