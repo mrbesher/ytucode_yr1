@@ -50,6 +50,7 @@ int lsquare(double points[][1000], int n, int order) {
   for (size_t i = 0; i < order+1; i++) {
     a[i][order+1]=b_sum[i];
   }
+  gauss(a,order+1);
   system("cls");system("clear");
   do {
     resume=0;
