@@ -126,7 +126,12 @@ double simpson(double a, double b, char expression[][100], int change) {
     a=swap;
   }
   if (change) {
-    printf("Enter the number of areas you wish to be used: ");scanf("%lf",&n);
+    do {
+      printf("Enter the number of areas you wish to be used: ");scanf("%lf",&n);
+      if (fmod(n,2)!=0) {
+        printf(RED"Error: n must be even\n"RESET);
+      }
+    } while(fmod(n,2)!=0);
     h = (b-a)/n;
   }
   n=(b-a)/h;

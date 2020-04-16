@@ -34,7 +34,7 @@ int main(int argc, char const *argv[]) {
       inverse(a,size);
       for (size_t i = 0; i < size; i++) {
         for (size_t j = size; j < 2*size; j++) {
-          printf("%4.4lf\t",a[i][j]);
+          printf("%1.4lf\t",a[i][j]);
         }
         printf("\n");
       }

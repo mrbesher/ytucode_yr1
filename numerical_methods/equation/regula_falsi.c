@@ -3,7 +3,7 @@
 int main(int argc, char const *argv[]) {
   int n,attempt=0;
   float a[100],start,end,epsilon,result_a=0,result_b,result,x,c,stop=0;
-  printf("This program uses the bisection method to determine a root value for a given equation.\nGiven that the equation is expressed as a[1]*x^n+a[2]*x^(n-1)+....+a[n+1].\nEnter n: ");
+  printf("This program uses regula-falsi method to determine a root value for a given equation.\nGiven that the equation is expressed as a[1]*x^n+a[2]*x^(n-1)+....+a[n+1].\nEnter n: ");
   scanf("%d",&n);
   for (size_t i = 0; i < n+1; i++) {
     printf("Enter a[%ld]: ",i+1);scanf("%f",&a[i]);

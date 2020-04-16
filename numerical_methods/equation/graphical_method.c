@@ -47,6 +47,6 @@ int main(int argc, char const *argv[]) {
     attempt++;
     printf("trying... (%d). x=%f Result=%f\n",attempt,x0,result);
   }
-  printf("when x is %f then the result would be %f\n",x0,result);
+  printf("when x is %f the result would be %f\n",x0,result);
   return 0;
 }

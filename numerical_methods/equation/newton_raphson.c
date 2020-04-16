@@ -17,7 +17,7 @@ int main(int argc, char const *argv[]) {
     pre_result=te_eval(expr);
     x0+=2*dx;
     result=te_eval(expr);
-    der=(result-pre_result)/dx;
+    der=(result-pre_result)/(2*dx);
     x0-=dx;
     result=te_eval(expr);
     x1=x0-(result/der); //determine x1
