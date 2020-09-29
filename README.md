@@ -9,3 +9,4 @@ Those are assignments to reinvent some calculation methods. Beware of memory lea
 
 ## Histogram equalization
 A simple code for small file inputs (photos in pgm format) to apply histogram equalization to them. Note that the code will work only if the header comments are removed.
+Here is a video on this project: https://youtu.be/OWPc9IVfdLQ
