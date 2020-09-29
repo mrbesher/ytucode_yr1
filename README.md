@@ -1,4 +1,4 @@
-# ytucode
+# ytucode 1. year
 This repository contains some projects that I wrote / am writing for university assignments. Folders are named after their relative courses. There are a huge room for improvments and there are a lot of things that I know now and didn't when I wrote those. I don't plan on doing anything with these projects anyway, so I am making them open for fun.
 
 ## Tetris
