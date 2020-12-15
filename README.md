@@ -1,5 +1,5 @@
-# ytucode 1. year
-This repository contains some projects that I wrote / am writing for university assignments. Folders are named after their relative courses. There are a huge room for improvments and there are a lot of things that I know now and didn't when I wrote those. I don't plan on doing anything with these projects anyway, so I am making them open source for fun.
+# C Code
+This repository contains some projects that I wrote / am writing for university assignments. Folders are named after their relative courses / projects. There is a huge room for improvments and there are a lot of things that I know now and didn't when I wrote those. I don't plan on doing anything with these projects anyway, so I am making them open source for fun.
 
 ## Tetris
 A simple implementation of the popular TETRIS game lacking a lot of functionality. It works best on unix-like operating systems.
