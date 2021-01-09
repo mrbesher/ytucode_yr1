@@ -1644,7 +1644,6 @@ void greetStudent(char* username, char* password) {
             "[5] Log out\n"
             "Select from above [1-5]: ");
     fgets(operator,COLUMN_MAX,stdin);
-    clearConsole();
     switch (operator[0]) {
       case '1':
         listStudentEnrollments(username);
@@ -1654,20 +1653,21 @@ void greetStudent(char* username, char* password) {
       break;
       case '3':
         printf("Enter course code: ");
-        fgets(operator, COLUMN_MAX, stdin);
-        strtok(operator, "\n");
-        enrollStudent(username, operator);
+        fgets(stringHolder, MAX_COLUMN_SIZE, stdin);
+        strtok(stringHolder, "\n");
+        enrollStudent(username, stringHolder);
       break;
       case '4':
         printf("Enter course code: ");
-        fgets(operator, COLUMN_MAX, stdin);
-        strtok(operator, "\n");
-        unEnrollStudent(username, operator,1);
+        fgets(stringHolder, MAX_COLUMN_SIZE, stdin);
+        strtok(stringHolder, "\n");
+        unEnrollStudent(username, stringHolder,1);
       break;
       default:
         cont = 0;
     }
   } while(cont);
+  clearConsole();
   free(stringHolder);
   free(operator);
 }
